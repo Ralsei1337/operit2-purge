@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "api_version": "2.0.0",
+  "toolpkg_id": "com.operit.purge",
+  "version": "0.1.0",
+  "author": [
+    "dsh-purge port for Operit2",
+    "original dsh-purge: 小杨 / YuJunZhiXue, maintained by kingcharleslzy-ai (MIT)"
+  ],
+  "main": "dist/main.js",
+  "display_name": {
+    "zh": "破甲 Purge",
+    "en": "Purge"
+  },
+  "description": {
+    "zh": "把 dsh-purge 的提示词层能力搬到 Operit2：清洗宿主提示词里的能力免责与拒绝引导句式、追加执行姿态段、按需收敛模型可见的工具清单，并附带调用审计、配置快照与一键回滚。全部改动可见、可关、可回滚。",
+    "en": "Brings dsh-purge's prompt-layer behaviour to Operit2: strip capability disclaimers and refusal-guidance wording from the host prompt, append an execution-posture section, prune the model-visible tool list, and ship call auditing with config snapshots and one-step rollback. Every change is inspectable, disableable, and revertible."
+  },
+  "enabled_by_default": false,
+  "installation_scope": "device",
+  "subpackages": [
+    {
+      "id": "purge_tools",
+      "entry": "dist/tools/purge_tools.js",
+      "enabled_by_default": false,
+      "display_name": {
+        "zh": "破甲控制台",
+        "en": "Purge Console"
+      },
+      "description": {
+        "zh": "purge_status / purge_configure / purge_audit / purge_revert：让模型自己查看与调整破甲配置。",
+        "en": "purge_status / purge_configure / purge_audit / purge_revert: lets the model inspect and adjust purge settings itself."
+      }
+    }
+  ]
+}

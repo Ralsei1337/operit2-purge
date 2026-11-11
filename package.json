@@ -1,0 +1,15 @@
+{
+  "name": "operit2-purge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "dsh-purge 的 Operit2 ToolPkg v2 移植：提示词净化、执行姿态注入、工具清单收敛、审计与快照回滚。",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pack": "node scripts/build.mjs",
+    "test": "node test/unit.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
